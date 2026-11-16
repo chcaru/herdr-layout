@@ -37,7 +37,7 @@ The focused title, palette, and scratchpad tests were adapted from local regress
 ## Branding and licenses
 
 The previous Microsoft product mark is excluded from this public package.
-`mods\layout-chrome\mark.svg` is an original neutral terminal/tile drawing created for this layout.
+`mods\layout-chrome\mark.svg` uses the owner's requested three-leaf fan geometry, adapted as a theme-tinted mask with distinct leaf opacities.
 Neither it nor the illustrative preview implies product or employer endorsement.
 Herdr, GitHub Copilot, and other product names remain attributable to their respective owners.
 
@@ -50,7 +50,7 @@ The owner requested public redistribution of the local customizations; this docu
 ## Public-readiness review
 
 The review read all 55 tracked text files in the source snapshot and copied only explicitly tracked distributable files into a fresh directory, without Git history.
-The original image and product mark were excluded; the public preview is illustrative sample content with neutral branding.
+The original image and previous product mark were excluded; the public preview is illustrative sample content.
 The reviewed text contained no identified internal project source, internal service endpoints, embedded credentials, personal email addresses, or session data.
 Runtime references to local Copilot session files describe functionality, not bundled conversations.
 This is a content review of the snapshot, not proof of authorship, employment-related ownership, complete upstream provenance, or the absence of every possible confidential detail.

@@ -276,21 +276,29 @@ test("sidebar mark and controls resolve packaged assets in wide, rail, and foote
   const sidebar = layout.children.find(node => node.id === "sidebar");
   const mod = sidebar.children.find(node => node.id === "brand").content.mod;
   const assets = new Set();
+  const renderedAssets = new Map();
   const asset = name => {
     const relative = path.relative(root, path.join(__dirname, "..", name)).split(path.sep);
     assert.ok(bundle.mods[relative[0]]?.includes(relative[1]), `Unpackaged asset: ${name}`);
     assert.ok(fs.statSync(path.join(root, ...relative)).isFile());
     assets.add(name);
-    return element();
+    const node = element();
+    renderedAssets.set(name, node);
+    return node;
   };
   let footer = false;
+  let accent = "#e6b450";
   const Chrome = vm.runInNewContext(`${load(path.join(root, mod, "main.js"))}\nWorkspaceChrome`, {
     View: class {}, div: element, h_flex: element, v_flex: element, image: asset, svg: asset,
-    theme: () => ({}), layout: () => layout, window: () => ({ platform: "windows" }),
+    theme: () => ({ accent }), layout: () => layout, window: () => ({ platform: "windows" }),
     props: () => ({ footer }), shared: () => null, updates: () => ({ app: {} })
   });
   const chrome = new Chrome();
   chrome.render();
+  assert.equal(renderedAssets.get(`mods/${mod}/mark.svg`).attrs.text_color, accent);
+  accent = "#6cb6ff";
+  chrome.render();
+  assert.equal(renderedAssets.get(`mods/${mod}/mark.svg`).attrs.text_color, accent);
   footer = true;
   chrome.render();
   sidebar.size.px = 44;

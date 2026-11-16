@@ -189,5 +189,5 @@ The explorer supports local Windows folders and selected remote contexts, but th
 Forks require local Windows Copilot panes, PowerShell process visibility, compatible Copilot session metadata, and an idle source conversation.
 Scratchpads accept local Windows drive or UNC paths and do not offer remote saving.
 The original layout clone and shipped-derived mod provenance are preserved at Herdr `0.1.15`.
-The sidebar uses an original neutral terminal/tile mark, not a product logo.
+The sidebar uses a three-leaf fan mark tinted from the current theme accent.
 See [ATTRIBUTION.md](ATTRIBUTION.md) for upstream licenses, modification notices, and the publication audit's limits.

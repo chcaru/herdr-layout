@@ -1,5 +1,5 @@
 // Modified from Herdr 0.1.15 for this custom layout.
-import { View, div, image, svg } from "gpui-kit";
+import { View, div, svg } from "gpui-kit";
 import { h_flex, v_flex } from "gpui-base";
 import { theme, run, props, window, shared, setShared, updates, layout } from "herdr";
 
@@ -50,7 +50,7 @@ export default class WorkspaceChrome extends View {
       .when(window()?.platform === "macos" && !window()?.fullscreen && !collapsed, el => el.pl(76))
       .when(!collapsed, el => el.child(h_flex().flex_1().items_center()
         .child(div().size(24).accessibility_label("Terminal workspace").tooltip("Terminal workspace")
-          .child(image("mods/layout-chrome/mark.svg").size(24)))))
+          .child(svg("mods/layout-chrome/mark.svg").size(24).text_color(t.accent)))))
       .when(!collapsed, el => el.child(this.button("search", svg("mods/layout-chrome/search.svg").size(15), () => run("mod.open", { name: "picker" }))))
       // On the macOS rail the traffic lights fill the row; the agents list's » unfolds it.
       .when(!(collapsed && window()?.platform === "macos"), el => el.child(this.button("sidebar-toggle", svg("mods/layout-chrome/sidebar.svg").size(15), toggleSidebar)));

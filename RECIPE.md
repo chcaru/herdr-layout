@@ -1,6 +1,6 @@
 # Tiled agent workspace
 
-A dark, gold-accented Windows workspace with a neutral terminal/tile mark above a Files sidebar and grouped agent tree, compact conversation tabs, equally balanced terminal tiles, Markdown scratchpads, and a command palette.
+A dark, gold-accented Windows workspace with a theme-tinted fan mark above a Files sidebar and grouped agent tree, compact conversation tabs, equally balanced terminal tiles, Markdown scratchpads, and a command palette.
 The preview is illustrative and sanitized; all project, agent, filename, and conversation content is sample content.
 
 ![Illustrative sanitized tiled agent workspace](preview.png)
@@ -14,7 +14,7 @@ The canvas is `#10141c`, chrome and popovers are `#141821`, borders and raised s
 
 | Region | Size and content |
 | --- | --- |
-| Sidebar mark | 46 px high, 24 px original terminal/tile mark, picker and collapse buttons |
+| Sidebar mark | 46 px high, 24 px three-leaf fan tinted with the current theme accent, picker and collapse buttons |
 | Files/Changes switch | 30 px high, two compact 24 px controls |
 | Files/Changes panel | Initially shown with Files selected, flexible weight 1 and 90 px minimum |
 | Spaces and agents | Flexible weight 1 and 90 px minimum, 41 px title header, 32 px space headers, 30 px agent rows, 26 px nested rows |
@@ -121,7 +121,7 @@ The complete runtime source and asset allowlist is [bundle.json](bundle.json).
 
 | Custom mod | Roles and interfaces |
 | --- | --- |
-| `layout-chrome` | Neutral terminal/tile mark, picker and rail toggle; `layout`, `shared`, `setShared`, `window`, `updates`, `run` |
+| `layout-chrome` | Theme-tinted fan mark, picker and rail toggle; `layout`, `shared`, `setShared`, `window`, `updates`, `run` |
 | `files-switch` | Layout stack selection and visibility via `layout.select`, `layout.show`, and `layout.hide` |
 | `files-tiled` | Tree and read-only preview; `props.preview`, `root`, `path`, `on`; `spaces`, `panes`, `focused`, `exec`, `readTextFile`, `watchFolder`, `pane.split` |
 | `agents-titles` | Space tree, statuses, pins and ordering; `props.spaceMenu`, `space`, `newSpace`, `machine`; `agents`, `terminals`, `knownAgents`, `setAgentOrder`, `terminal.pin` |
@@ -143,7 +143,7 @@ Copilot argv retains `--disable-builtin-mcps` without `--yolo` in every bundled 
 Shipped dependencies include Changes, workspace chrome, the new-tab menu, contextual menu, picker, prompt, machine-add, file and pane assets, and Copilot/shell icons.
 Do not clone unused stock folders or copy runtime editor typings.
 `scratchpad-space` is clone provenance only, not a runtime dependency.
-The original terminal/tile mark replaces the previous product branding.
+The three-leaf fan uses a theme-tinted SVG mask with distinct leaf opacities, not fixed product colors.
 Shipped-derived code and glyphs retain the attribution in [ATTRIBUTION.md](ATTRIBUTION.md).
 
 ## Watch out
