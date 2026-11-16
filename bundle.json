@@ -1,0 +1,32 @@
+{
+  "layout": "files-left",
+  "theme": "carusos-conjecture",
+  "baseline": {
+    "herdr-app": "0.1.15",
+    "hc": "0.1.21"
+  },
+  "mods": {
+    "layout-chrome": ["main.js", "mod.json", "mark.svg", "search.svg", "sidebar.svg", "settings.svg", "plus.svg"],
+    "files-switch": ["main.js", "mod.json"],
+    "files-tiled": ["main.js", "mod.json", "chevron-down.svg", "chevron-right.svg", "file.svg", "folder.svg"],
+    "agents-titles": ["main.js", "mod.json", "titles.js"],
+    "tabs-tiling": ["main.js", "mod.json", "balance.js", "splits.js", "titles.js", "chevron-down.svg", "win-close.svg", "win-max.svg", "win-min.svg", "win-restore.svg"],
+    "pane-fork": ["main.js", "mod.json", "fork.js", "fork.cjs", "titles.js", "fork.svg"],
+    "custom-palette": ["main.js", "mod.json", "actions.js", "status.js", "command.svg"],
+    "scratchpad-markdown": ["main.js", "mod.json"]
+  },
+  "stockRequirements": [
+    "mods\\changes\\main.js", "mods\\changes\\changes.svg",
+    "mods\\workspace-chrome\\main.js", "mods\\workspace-chrome\\spinner.svg",
+    "mods\\workspace-chrome\\pin.svg", "mods\\workspace-chrome\\pin-off.svg",
+    "mods\\workspace-chrome\\plus.svg", "mods\\workspace-chrome\\search.svg",
+    "mods\\workspace-chrome\\sidebar.svg", "mods\\workspace-chrome\\chevron-down.svg",
+    "mods\\workspace-chrome\\chevron-right.svg", "mods\\workspace-chrome\\server.svg",
+    "mods\\workspace-chrome\\monitor.svg", "mods\\workspace-chrome\\branch.svg",
+    "mods\\new-menu\\main.js", "mods\\menu\\main.js", "mods\\picker\\main.js",
+    "mods\\prompt\\main.js", "mods\\machine-add\\main.js",
+    "mods\\files\\file.svg", "mods\\pane\\split-right.svg", "mods\\pane\\split-down.svg",
+    "mods\\pane\\close.svg", "mods\\pane\\zoom.svg", "mods\\pane\\unzoom.svg",
+    "icons\\copilot.svg", "icons\\shell.svg"
+  ]
+}

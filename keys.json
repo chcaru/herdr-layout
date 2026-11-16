@@ -1,0 +1,22 @@
+{
+  "global": {
+    "ctrl-alt-c down": "custom-palette.split-agent-down",
+    "ctrl-alt-c enter": "custom-palette.new-agent",
+    "ctrl-alt-c left": "custom-palette.split-agent-left",
+    "ctrl-alt-c right": "custom-palette.split-agent-right",
+    "ctrl-alt-c up": "custom-palette.split-agent-up",
+    "ctrl-alt-e": "custom-palette.files",
+    "ctrl-alt-f": "custom-palette.fork",
+    "ctrl-alt-g": "custom-palette.changes",
+    "ctrl-alt-n": "custom-palette.new-space",
+    "ctrl-alt-s down": "custom-palette.split-scratchpad-down",
+    "ctrl-alt-s left": "custom-palette.split-scratchpad-left",
+    "ctrl-alt-s right": "custom-palette.split-scratchpad-right",
+    "ctrl-alt-s up": "custom-palette.split-scratchpad-up",
+    "ctrl-alt-t down": "custom-palette.split-terminal-down",
+    "ctrl-alt-t left": "custom-palette.split-terminal-left",
+    "ctrl-alt-t right": "custom-palette.split-terminal-right",
+    "ctrl-alt-t up": "custom-palette.split-terminal-up",
+    "ctrl-shift-p": "mod.open:custom-palette"
+  }
+}

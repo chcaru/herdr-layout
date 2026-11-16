@@ -1,0 +1,5 @@
+.homes
+.install-stage-*
+gpui-kit.d.ts
+jsconfig.json
+*.log
