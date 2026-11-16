@@ -115,7 +115,7 @@ The status strip remains alive to dispatch custom key commands after the palette
 | `main` pane header | `pane-fork`, always revealed, top position and 30 px height |
 | `status` | `custom-palette` with required `props.status: true` |
 
-Use the included `themes\carusos-conjecture.json` and `layouts\files-left.json` as the exact color and sizing inputs.
+Use the included `themes\aurum.json` and `layouts\files-left.json` as the exact color and sizing inputs.
 The layout is cloned from shipped `main` at version `0.1.15`.
 The complete runtime source and asset allowlist is [bundle.json](bundle.json).
 

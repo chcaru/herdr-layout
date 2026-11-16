@@ -1,6 +1,7 @@
 # Tiled agent workspace for Herdr
 
 A custom Herdr layout with a Files sidebar, grouped agent tree, compact tiled terminals, conversation forks, Markdown scratchpads, and a gold-accented command palette.
+The Aurum theme is inspired by Ayu Dark.
 The preview is an illustrative, sanitized rendering with sample content, not actual session data.
 
 ![Illustrative sanitized tiled agent workspace](preview.png)

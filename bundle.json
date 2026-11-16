@@ -1,6 +1,6 @@
 {
   "layout": "files-left",
-  "theme": "carusos-conjecture",
+  "theme": "aurum",
   "baseline": {
     "herdr-app": "0.1.15",
     "hc": "0.1.21"

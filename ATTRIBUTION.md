@@ -21,7 +21,7 @@ No live settings, user state, terminal/session data, generated API typings, back
 | `scratchpad-markdown` | Local `scratchpad-space` clone, recorded version `0.1.15` |
 | `custom-palette` | Customized Herdr-style palette and workspace status code; no clone metadata in its manifest |
 | `files-switch` | Local Files/Changes stack-switch helper |
-| Theme | Locally customized `carusos-conjecture` palette |
+| Theme | Aurum, a locally customized palette inspired by Ayu Dark |
 
 The shipped-derived code and associated SVG glyphs remain attributable to their original Herdr contributors.
 Several shipped glyphs identify Lucide in their SVG class names and remain attributable to the original icon contributors.
